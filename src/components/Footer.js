@@ -12,7 +12,6 @@ export default class Footer extends React.Component {
           window.onscroll = () => {
             let currentScrollPos = window.pageYOffset;
             let maxScroll = document.body.scrollHeight - window.innerHeight;
-            console.log(currentScrollPos)
             if ((currentScrollPos > 0 && currentScrollPos <= maxScroll)) {
               this.setState({ opacity: "0" })
             } else {
